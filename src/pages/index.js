@@ -18,8 +18,33 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Jadoo</title>
-        <meta name="description" content="Jadoo App Travel" />
+        <meta name="description" content="travel app, life app, aplikasi jalan jalan, tour and travel, pesan guide, tiket travel, tiket, travel" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          property="og:url"
+          content="https://jadoo-tailwind.vercel.app/"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:title"
+          content="Jadoo Tailwind"
+        />
+        <meta
+          property="og:description"
+          content="travel app, life app, aplikasi jalan jalan, tour and travel, pesan guide, tiket travel, tiket, travel"
+        />
+        <meta
+          property="og:image"
+          content="https://jadoo-tailwind.vercel.app/travel-app.jpg"
+        />
+
+
+
       </Head>
 
       <div className="absolute z-10 w-full py-12">
@@ -392,7 +417,9 @@ export default function Home() {
                       interesting offers about Cobham</h6>
                     <form className="flex justify-center">
                       <fieldset className="relative mr-8">
-                        <span className="material-icons text-gray-500 absolute h-full w-16 flex items-center justify-center">mail_outline</span>
+                        <div className="w-16 h-full absolute flex justify-center items-center">
+                          <span className="material-icons text-gray-500">mail_outline</span>
+                        </div>
                         <input type="text" placeholder='Your Email' className='appearance-none rounded-lg py-4 pl-14 bg-white w-96 focus:outline-none transition duration-300 border-20 border-transparent focus:border-accent-6' />
                       </fieldset>
                       <button className="rounded-lg text-white bg-gradient-to-b from-accent-2/90 to-accent-2 py-4 px-16">Subscribe</button>
