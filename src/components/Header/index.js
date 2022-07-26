@@ -24,38 +24,38 @@ export default function Header() {
           <ul className="flex items-center flex-col lg:flex-row gap-y-6 lg:gap-y-0">
             <li className=''>
               <Link href="/destinations">
-                <a className="px-9 font-medium text-gray-800">Destinations</a>
+                <a className="px-9 font-medium text-white lg:text-gray-800">Destinations</a>
               </Link>
             </li>
             <li className=''>
               <Link href="/hotels">
-                <a className="px-9 font-medium text-gray-800">Hotels</a>
+                <a className="px-9 font-medium text-white lg:text-gray-800">Hotels</a>
               </Link>
             </li>
             <li className=''>
               <Link href="/flights">
-                <a className="px-9 font-medium text-gray-800">Flights</a>
+                <a className="px-9 font-medium text-white lg:text-gray-800">Flights</a>
               </Link>
             </li>
             <li className=''>
               <Link href="/bookings">
-                <a className="px-9 font-medium text-gray-800">Bookings</a>
+                <a className="px-9 font-medium text-white lg:text-gray-800">Bookings</a>
               </Link>
             </li>
             <li className=''>
               <Link href="/login">
-                <a className="px-9 font-medium text-gray-800">Login</a>
+                <a className="px-9 font-medium text-white lg:text-gray-800">Login</a>
               </Link>
             </li>
             <li className=''>
               <Link href="/sign-up">
-                <a className="px-5 py-1 font-medium text-gray-800 border border-gray-800 rounded-md mx-3">Sign up</a>
+                <a className="px-5 py-1 font-medium text-white lg:text-gray-800 border border-white lg:border-gray-800 rounded-md mx-3">Sign up</a>
               </Link>
             </li>
             <li className=''>
-              <button className="px-9 font-medium text-gray-800 relative">
+              <button className="px-9 font-medium text-white lg:text-gray-800 relative">
                 EN
-                <span className="absolute w-2 h-2 border-gray-800 border-b border-r transform rotate-45 translate-y-1/2 ml-2"></span>
+                <span className="absolute w-2 h-2 border-white lg:border-gray-800 border-b border-r transform rotate-45 translate-y-1/2 ml-2"></span>
               </button>
             </li>
           </ul>
