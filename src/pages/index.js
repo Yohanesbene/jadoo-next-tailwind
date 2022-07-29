@@ -13,7 +13,11 @@ import Facebook from 'images/facebook.svg'
 import Twitter from 'images/twitter.svg'
 import Instagram from 'images/instagram.svg'
 
+import Modal from 'components/modal'
+
 export default function Home() {
+
+
   return (
     <div className="">
       <Head>
@@ -70,17 +74,31 @@ export default function Home() {
                 and full life</h2>
               <p className="text-gray-400 max-w-lg font-medium text-sm lg:text-base leading-6 lg:leading-8 mb-8">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
               <div className="flex">
-                <Link href="/">
+                <Link href="#section-category">
                   <a className="mr-11 bg-accent-1 shadow-accent-1/50 shadow-[0_20px_35px] text-white font-medium rounded-xl px-6 py-4">Find out more</a>
                 </Link>
-                <button className="flex items-center">
-                  <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
-                    <span className="material-icons">
-                      play_arrow
+                {/* <button className="flex items-center" onClick={() => setActive((prev) => !prev)}>
+
+                </button> */}
+
+                <Link href={`/?modal=1&id=play-demo`}>
+                  <a className="flex items-center">
+                    <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
+                      <span className="material-icons">
+                        play_arrow
+                      </span>
                     </span>
-                  </span>
-                  <span className="hidden lg:block text-gray-500 font-medium">Play Demo</span>
-                </button>
+                    <span className="hidden lg:block text-gray-500 font-medium">Play Demo</span>
+                  </a>
+                </Link>
+
+                <Modal wrapperClassName="w-[700px]" id="play-demo">
+                  <h3 className="">Tutorial Next JS Tailwind</h3>
+                  <div className="aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/38t1X51ztt0" title="Tutorial Next JS Tailwind" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  </div>
+                </Modal>
+
               </div>
             </div>
             <div className="hidden lg:block w-[783px] h-[764px] pt-24 relative">
@@ -98,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-32">
+      <section className="mb-32 scroll-mt-10" id="section-category">
         <div className="max-w-7xl mx-auto relative px-4">
           <div className="absolute w-36 h-36 lg:-right-10 -top-10">
             <DecorPlus1 className="decor-plus-style-1" />
@@ -446,7 +464,7 @@ export default function Home() {
           <div className="flex flex-wrap mb-20">
             <div className="w-full lg:w-3/12 px-4">
               <h6 className="text-5xl tracking-tight text-gray-900 mb-4">Jadoo.</h6>
-              <p className="tetx-sm text-gray-500 font-medium pr-8">Book your trip in minute, get full Control for much longer.
+              <p className="text-sm text-gray-500 font-medium pr-8">Book your trip in minute, get full Control for much longer.
               </p>
             </div>
             <div className="w-full lg:w-2/12 px-4">
